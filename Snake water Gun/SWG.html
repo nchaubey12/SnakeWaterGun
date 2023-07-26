@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake, Water, Gun Game</title>
+  <link rel="stylesheet" type="text/css" href="SWG.css">
+</head>
+<body>
+    <p class="heading">Welcome to the game of Snake, Gun, and Water!</p>
+    <p class="rule"> Instructions:<br> 
+    <ul class="rules"> 
+        <li>If there is S (Snake) and W (Water), Snake wins as it drinks the Water.<br></li>
+        <li>If there is G (Gun) and S (Snake), Gun wins as it will kill the Snake.<br></li>
+        <li>If there is W (Water) and G (Gun), Water wins as the Gun will sink in Water.<br></li>
+    </ul>
+    <p> Remember these rules while playing, and may the best element win! Enjoy the game!</p>
+  <div class="container">
+    <h1>Snake, Water, Gun Game</h1>
+    <p class=" instruction">'S' for Snake, 'W' for Water, 'G' for Gun</p>
+    <p class=" instruction">You have 10 chances</p>
+    <div id="chances"></div>
+    <div id="user-choice">
+      <p id="command" for="choice">Enter Your Choice:</p> 
+      <input type="text" id="choice" placeholder="Enter S , W , G ." maxlength="1" />
+      <button id="Key" onclick="playGame()">Submit</button>
+    </div>
+    <div id="game-result" class="result"></div>
+    <div id="scoreboard">
+      <h2>Scoreboard</h2>
+      <p>User Points: <span id="user-points">0</span></p>
+      <p>Computer Points: <span id="comp-points">0</span></p>
+    </div>
+  </div>
+  <script src="SWG1.js"></script>
+</body>
+</html>

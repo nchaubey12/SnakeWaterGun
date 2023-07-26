@@ -1,0 +1,86 @@
+body {
+  color:aliceblue;
+  background-image: linear-gradient(
+    45deg,
+    #51504f,
+    #4a4c4d,
+    #202120,
+    #0e0f0f,
+    #000000
+  );
+  background-size: 700%;
+  animation-name: colors;
+  background-position: center center;
+  background-attachment: fixed;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 10s;
+}
+@keyframes colors {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 20px solid #ccc;
+  border-radius: 5px;
+  margin-top: 25px
+  
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.heading{
+    font-family: Arial, sans-serif;
+    font-size:50px;
+    text-align:center;
+    margin: auto;
+    font-weight: bold 
+}
+.rule{
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: 20px;
+}
+.instruction{
+    text-align: center;
+    font-size: 20px;
+}
+#command{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+.result {
+  font-weight: bold;
+}
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #1ac7ca;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#choice{
+  margin: 0 auto;
+}
+button:hover {
+  background-color: #149fb1;
+}
+input {
+  padding: 5px;
+  font-size: 16px;
+}
+ul.rules{
+  list-style: disc;
+  font-size: 15px;
+}
